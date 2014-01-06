@@ -36,6 +36,8 @@ $( document ).ready( function() {
       $( "#fouten" ).css('visibility', 'visible');
     }
 
+    $( "#fouten" ).empty();
+    $( "#fouten" ).css('visibility', 'hidden');
 
     if(!$( "#naam" ).val()) {
       ok = false;
@@ -82,6 +84,7 @@ $( document ).ready( function() {
 <body>
   <div class="banner">
     <h1>Theater 'De Tulp'</h1>
+    <img src="tulp.png" height="70px" width="70px">
   </div>
   <div class="menu">
     <ul>
