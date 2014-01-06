@@ -6,21 +6,27 @@
  * Rood: #BF2011
  */
 body {
+  height: 100%;
   width: 100%;
   background-color: #F2C8A2;
   padding: 0;
   margin: 0;
   color: #163E73;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-.banner h1 {
+#banner h1 {
   display: inline-block;
-  width: 50%;
+  width: 70%;
   margin-left: 7%;
   margin-top: 12px;
 }
 
-.banner img {
+#banner img {
   float: right;
 }
 
@@ -62,7 +68,7 @@ label + input {
 }
 
 
-.banner {
+#banner {
   width: 100%;
   padding: 0;
   margin: 0;
@@ -72,7 +78,7 @@ label + input {
 }
 
 
-.menu ul {
+#menu ul {
   position: absolute;
   visibility: visible;
   left: 0;
@@ -83,27 +89,23 @@ label + input {
   z-index:1;
 }
 
-.menu {
+#menu {
   padding: 0;
   margin: 0;
   display: inline-block;
-  *display: inline;
-  zoom: 1;
-  margin: 0;
   vertical-align: middle;
   height: 2.4em;
   color: inherit;
   background-color: #F29F05;
   line-height: 1.5em;
-  padding: 5px px;
-  padding: 0px 0px 0px 40px;
+  padding: 0% 0% 0% 10%;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 90%;
   white-space: nowrap;
   visibility: visible;
   z-index: 2;
-  width: 100%;
+  width: 90%;
   border: 0;
   border-bottom: 1px solid #163E73;
   border-bottom-width: 1px;
@@ -111,35 +113,30 @@ label + input {
   border-bottom-color: #163E73;
 }
 
-.menu>ul {
+#menu>ul {
   position: relative;
+  display: inline-block;
   background-color: #F29F05;
   padding: 0;
   margin: 0;
 }
 
 
-.menu>ul:focus {
+#menu>ul:focus {
   outline:0;
 }
 
-.menu li {
+#menu li {
   position: relative;
   display: inline-block;
-  *display: inline;
-  zoom: 1;
   vertical-align: middle;
   width: auto;
   margin: 7px 2px;
   height: 1px;
 }
 
-.menu li a:hover {
+#menu li a:hover {
   color: #37648C;
-}
-
-.main-content {
-  margin: 20px;
 }
 
 a {
@@ -151,7 +148,7 @@ a:hover {
   color: #37648C;
 }
 
-.menu li a {
+#menu li a {
   padding: 5px 20px;
   text-decoration: none;
 }
@@ -160,7 +157,7 @@ a:hover {
   background-color: #F2C8A2;
 }
 
-.menu a {
+#menu a {
   border: 1px solid transparent;
   border-left: 0;
   border-right: 0;
@@ -183,3 +180,26 @@ a:hover {
   padding: 0px;
   margin: 0px;
 }
+
+#main-content {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 11%;
+  margin-right: 15%;
+  padding-bottom: 60px;
+}
+
+#footer {
+  position: absolute;
+  margin-left: 10px;
+  bottom: 25px;
+  width: 60%;
+  height: 60px;
+}
+
+#container {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+}
+

@@ -7,11 +7,12 @@
   <script src="jquery-2.0.3.min.js"></script>
 </head>
 <body>
-  <div class="banner">
+<div id="container">
+  <div id="banner">
     <h1>Theater 'De Tulp'</h1>
-    <img src="tulp.png" height="70px" width="70px">
+    <img src="tulp.png" height="70" width="70" alt="logo theater de tulp">
   </div>
-  <div class="menu">
+  <div id="menu">
     <ul>
     <li><a href="index.html">Home</a></li>
     <li><a id="page" href="aanbod.html">Aanbod</a></li>
@@ -19,7 +20,7 @@
     <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
-  <div class="main-content">
+  <div id="main-content">
  <applet
     code    = "gui.TheaterApplet.class"
     width   = "570"
@@ -27,5 +28,13 @@
     archive = "propproj.jar,mijnTulp.jar,firebirdsql-full.jar">
  </applet>
  </div>
+  <div id="footer">
+  <p>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+      </a>
+  </p>
+  </div>
+</div>
 </body>
 </html>
