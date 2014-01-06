@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Registratieformulier Theater de Tulp</title>
-<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
 <link rel="stylesheet" type="text/css" href="tulp.css">
 <script src="jquery-2.0.3.min.js"></script>
 <script type="text/javascript">
@@ -34,7 +33,9 @@ $( document ).ready( function() {
 
     function voegFoutToe(fout) {
       $( "#fouten" ).append("<p>"+fout+"</p>");
+      $( "#fouten" ).css('visibility', 'visible');
     }
+
 
     if(!$( "#naam" ).val()) {
       ok = false;
@@ -82,28 +83,28 @@ $( document ).ready( function() {
   <div class="banner">
     <h1>Theater 'De Tulp'</h1>
   </div>
-  <div class="pure-menu pure-menu-open pure-menu-horizontal">
+  <div class="menu">
     <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="aanbod.html">Aanbod</a></li>
-    <li><a href="register.html">Registreer</a></li>
+    <li><a id="page" href="register.html">Registreer</a></li>
     <li><a href="contact.html">Contact</a></li>
     </ul>
   </div>
   <div class="main-content">
-<form action="http://www.ntwpracticumnet.ou.nl:8080/registratie/RegistratieServlet" class="pure-form pure-form-aligned" id="formulier" method="post" accept-charset="utf-8">
+<form action="http://www.ntwpracticumnet.ou.nl:8080/registratie/RegistratieServlet" id="formulier" method="post" accept-charset="utf-8">
   <div id="fouten"></div>
-  <div class="formline pure-control-group"><label for="naam">Naam:</label><input type="text" name="naam" id="naam" /></div>
-  <div class="formline pure-control-group"><label for="postcode">Postcode:</label><input type="text" name="postcode" id="postcode" /></div>
-  <div class="formline pure-control-group"><label for="plaats">Plaatsnaam:</label><input type="text" name="plaats" id="plaats" /></div>
-  <div class="formline pure-control-group"><label for="straat">Straatnaam:</label><input type="text" name="straat" id="straat" /></div>
-  <div class="formline pure-control-group"><label for="huisnr">Huisnr:</label><input type="text" name="huisnr" id="huisnr" /></div>
-  <div class="formline pure-control-group"><label for="telefoon">Telefoonnummer:</label><input type="text" name="telefoon" id="telefoon" maxlength="10" /></div>
-  <div class="formline pure-control-group"><label for="mobiel">Mobiel nummer:</label><input type="text" name="mobiel" id="mobiel" maxlength="10" /></div>
-  <div class="formline pure-control-group"><label for="email">E-mailadres:</label><input type="text" name="email" id="email" /></div>
-  <div class="formline pure-control-group"><label for="gebruiker">Gebruikersnaam:</label><input type="text" name="gebruiker" id="gebruiker" /></div>
-  <div class="formline pure-control-group"><label for="wacthwoord">Wachtwoord:</label><input type="password" name="wachtwoord" id="wachtwoord" /></div>
-  <div class="formline pure-controls"><input type="submit" value="Verzend" id="verzend" /></div>
+  <div class="formline"><label for="naam">Naam:</label><input type="text" name="naam" id="naam" /></div>
+  <div class="formline"><label for="postcode">Postcode:</label><input type="text" name="postcode" id="postcode" /></div>
+  <div class="formline"><label for="plaats">Plaatsnaam:</label><input type="text" name="plaats" id="plaats" /></div>
+  <div class="formline"><label for="straat">Straatnaam:</label><input type="text" name="straat" id="straat" /></div>
+  <div class="formline"><label for="huisnr">Huisnr:</label><input type="text" name="huisnr" id="huisnr" /></div>
+  <div class="formline"><label for="telefoon">Telefoonnummer:</label><input type="text" name="telefoon" id="telefoon" maxlength="10" /></div>
+  <div class="formline"><label for="mobiel">Mobiel nummer:</label><input type="text" name="mobiel" id="mobiel" maxlength="10" /></div>
+  <div class="formline"><label for="email">E-mailadres:</label><input type="text" name="email" id="email" /></div>
+  <div class="formline"><label for="gebruiker">Gebruikersnaam:</label><input type="text" name="gebruiker" id="gebruiker" /></div>
+  <div class="formline"><label for="wacthwoord">Wachtwoord:</label><input type="password" name="wachtwoord" id="wachtwoord" /></div>
+  <div class="formline"><input type="submit" value="Verzend" id="verzend" /></div>
   <input type="hidden" name="url" value="jdbc:firebirdsql://www.ntwpracticumnet.ou.nl/d:/inetpub/wwwroot/propedeuseproject/databases/propprojPDE.fdb" />
 </form>
 </div>
