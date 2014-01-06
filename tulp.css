@@ -78,7 +78,7 @@ label + input {
 }
 
 
-#menu ul {
+.menu ul {
   position: absolute;
   visibility: visible;
   left: 0;
@@ -89,7 +89,7 @@ label + input {
   z-index:1;
 }
 
-#menu {
+.menu {
   padding: 0;
   margin: 0;
   display: inline-block;
@@ -113,7 +113,7 @@ label + input {
   border-bottom-color: #163E73;
 }
 
-#menu>ul {
+.menu>ul {
   position: relative;
   display: inline-block;
   background-color: #F29F05;
@@ -122,11 +122,11 @@ label + input {
 }
 
 
-#menu>ul:focus {
+.menu>ul:focus {
   outline:0;
 }
 
-#menu li {
+.menu li {
   position: relative;
   display: inline-block;
   vertical-align: middle;
@@ -135,7 +135,7 @@ label + input {
   height: 1px;
 }
 
-#menu li a:hover {
+.menu li a:hover {
   color: #37648C;
 }
 
@@ -148,16 +148,19 @@ a:hover {
   color: #37648C;
 }
 
-#menu li a {
+.menu li a {
   padding: 5px 20px;
   text-decoration: none;
 }
 
 #page {
   background-color: #F2C8A2;
+  border-top: solid 1px #163E73;
+  border-left: solid 1px #163E73;
+  border-right: solid 1px #163E73;
 }
 
-#menu a {
+.menu a {
   border: 1px solid transparent;
   border-left: 0;
   border-right: 0;
