@@ -21,12 +21,21 @@
     </ul>
   </div>
   <div id="main-content">
+    <!--
  <applet
     code    = "gui.TheaterApplet.class"
     width   = "570"
     height  = "600"
     archive = "propproj.jar,mijnTulp.jar,firebirdsql-full.jar">
  </applet>
+ -->
+    <object type="application/x-java-applet"
+      name="theaterApplet" width="570" height="600">
+      <param name="code" value="gui.TheaterApplet.class" />
+      <param name="archive" value="propproj.jar,mijnTulp.jar,firebirdsql-full.jar" />
+      <param name="scriptable" value="true" />
+      <param name="mayscript" value="true" />
+    </object>
  </div>
   <div id="footer">
   <p>
